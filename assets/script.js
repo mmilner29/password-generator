@@ -16,7 +16,7 @@ const lettersCases = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 //Special Characters
-const specialCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", " < ", "=", ">", "?", "@", "[", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
+const specialCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"];
 
 //Combination of characters
 var combinedCharacters;
@@ -31,7 +31,7 @@ function generatePassword() {
   if (length === "" || null) {
     window.alert("You need to provide a valid answer! Please try again");
     return generatePassword();
-  } else if (length > 8 && length < 128) {
+  } else if (length >= 8 && length <= 128) {
     //desired input
     lowerCase = confirm ("Would you like lower case letters included in your password?");
     capital = confirm ("Would you like capital letters included in your password?");

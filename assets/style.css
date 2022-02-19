@@ -1,9 +1,12 @@
+/*Universal style, applied to all elements unless more specific style applied later*/
+/*Psuedo-elements refer to states before & after password generation*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/*Applies specifc padding to any item with the class wrapper inside the body*/
 html,
 body,
 .wrapper {
@@ -11,12 +14,13 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/*Applies font & background color to body*/
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
+/*Applies specifc padding to any item with the class wrapper*/
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -72,6 +76,7 @@ header {
   clear: both;
 }
 
+/*Styling the button with .btn class (specifically here the generate password button!)*/
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -85,6 +90,7 @@ header {
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
   text-align: center;
+  /*Changes the mouse appearance!*/
   cursor: pointer;
 }
 
@@ -93,10 +99,12 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+/* Doesn't appear to be doing anything or referring to a class used)
 .float-right {
   float: right;
-}
-
+} 
+*/
+/*Applies style to the element (the box the password will generate in) with the password ID */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,6 +126,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/*Media queries allow the display to adjust, in this instance for smaller screen sizes*/
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
