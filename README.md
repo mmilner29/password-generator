@@ -1,7 +1,7 @@
 # Password Generator 
 
 ## Purpose
-A website that generates a random password based on user input
+A website that generates a random password based on user input.
 
 ## Built With
 * HTML
@@ -10,11 +10,11 @@ A website that generates a random password based on user input
 
 ## Website
 
-
+https://mmilner29.github.io/password-generator/
 
 ## Preview
 
-![Website Preview](/assets/images/portfolio-preview.png)
+![Website Preview](/assets/images/preview.png)
 
 ## Contribution
 Made with ❤️ by Madi Milner
