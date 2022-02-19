@@ -41,7 +41,7 @@ function generatePassword() {
     return generatePassword();
   }
 
-  //Combinations of situations
+  //Combinations of situations from resulting use input
   if (!capital && !confirmNumbers && !characters) {
     combinedCharacters = letters;
   } else if (capital && confirmNumbers && characters) {
@@ -64,7 +64,15 @@ function generatePassword() {
     combinedCharacters = specialCharacters.concat(lettersCases);
   };
 
-return combinedCharacters;
+  console.log(combinedCharacters);
+
+var pass = [];
+//Randomly select characters at desired length
+for (var i = 0; i < length; i++) {
+  var assignCharacters = combinedCharacters[Math.floor(Math.random() * combinedCharacters.length)];
+  pass.push(assignCharacters);
+}
+return pass;
 };
 
 // Write password to the #password input
